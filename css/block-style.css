@@ -1,0 +1,107 @@
+/* リストスタイルの初期数字をリセット */
+ol[start="2"] {
+    counter-reset: cnt 1;
+}
+
+ol[start="3"] {
+    counter-reset: cnt 2;
+}
+
+ol[start="4"] {
+    counter-reset: cnt 3;
+}
+
+ol[start="5"] {
+    counter-reset: cnt 4;
+}
+
+ol[start="6"] {
+    counter-reset: cnt 5;
+}
+
+ol[start="7"] {
+    counter-reset: cnt 6;
+}
+
+ol[start="8"] {
+    counter-reset: cnt 7;
+}
+
+ol[start="9"] {
+    counter-reset: cnt 8;
+}
+
+ol[start="10"] {
+    counter-reset: cnt 9;
+}
+
+/* リスト | スタイル | なし */
+ul.is-style-none-style,
+ol.is-style-none-style {
+    padding-left: 1em;
+}
+
+ul.is-style-none-style li,
+ol.is-style-none-style li {
+    list-style: none;
+}
+
+/* リスト | スタイル | 米印付き数字 */
+ol.is-style-asterisk-list-style li {
+    list-style-type: none;
+    counter-increment: cnt;
+    position: relative;
+}
+
+ol.is-style-asterisk-list-style li::before {
+    content: "※" counter(cnt);
+    display: inline-block;
+    margin-left: -2.5em;
+    width: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* リスト | スタイル | 括弧付き数字 */
+ol.is-style-brackets-list-style li {
+    list-style-type: none;
+    counter-increment: cnt;
+    position: relative;
+}
+
+ol.is-style-brackets-list-style li::before {
+    content: "(" counter(cnt) ")";
+    display: inline-block;
+    margin-left: -3.5em;
+    width: 3em;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* リスト | スタイル | 白丸付き数字 */
+ol.is-style-numbered-circle-mark-list-style li {
+    list-style-type: none;
+    counter-increment: cnt;
+    position: relative;
+}
+
+ol.is-style-numbered-circle-mark-list-style li::before {
+    content: counter(cnt);
+    position: absolute;
+    display: flex;
+    width: 1.2em;
+    height: 1.2em;
+    margin-left: -2em;
+    top: 0.35em;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #000;
+    border: #999 1px solid;
+    border-radius: 50%;
+    font-size: 83%;
+}
