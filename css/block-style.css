@@ -1,4 +1,8 @@
 /* リストスタイルの初期数字をリセット */
+ol[start="0"] {
+    counter-reset: cnt 0;
+}
+
 ol[start="2"] {
     counter-reset: cnt 1;
 }
