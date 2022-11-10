@@ -1,21 +1,22 @@
+.editor-styles-wrapper {
+}
+
 /* リスト | スタイル | なし */
-.edit-post-visual-editor .editor-styles-wrapper ul.is-style-none-style,
-.edit-post-visual-editor .editor-styles-wrapper ol.is-style-none-style {
+.is-style-none-style {
     padding-left: 1em;
 }
 
-.edit-post-visual-editor .editor-styles-wrapper ul.is-style-none-style li,
-.edit-post-visual-editor .editor-styles-wrapper ol.is-style-none-style li {
+.is-style-none-style li {
     list-style: none;
 }
 
 /* リスト | スタイル | 米印付き数字 */
-.edit-post-visual-editor .editor-styles-wrapper ol.is-style-asterisk-list-style li {
+.is-style-asterisk-list-style li {
     list-style-type: none;
     position: relative;
 }
 
-.edit-post-visual-editor .editor-styles-wrapper ol.is-style-asterisk-list-style li::before {
+.is-style-asterisk-list-style li::before {
     content: "※" counter(list-item);
     display: inline-block;
     margin-left: -2.5em;
@@ -26,12 +27,12 @@
 }
 
 /* リスト | スタイル | 括弧付き数字 */
-.edit-post-visual-editor .editor-styles-wrapper ol.is-style-brackets-list-style li {
+.is-style-brackets-list-style li {
     list-style-type: none;
     position: relative;
 }
 
-.edit-post-visual-editor .editor-styles-wrapper ol.is-style-brackets-list-style li:before {
+.is-style-brackets-list-style li:before {
     content: "(" counter(list-item) ")";
     display: inline-block;
     margin-left: -3.5em;
@@ -43,12 +44,12 @@
 }
 
 /* リスト | スタイル | 白丸付き数字 */
-.edit-post-visual-editor .editor-styles-wrapper ol.is-style-numbered-circle-mark-list-style li {
+.is-style-numbered-circle-mark-list-style li {
     list-style-type: none;
     position: relative;
 }
 
-.edit-post-visual-editor .editor-styles-wrapper ol.is-style-numbered-circle-mark-list-style li:before {
+.is-style-numbered-circle-mark-list-style li:before {
     content: counter(list-item);
     position: absolute;
     display: flex;
