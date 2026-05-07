@@ -1,6 +1,3 @@
-.editor-styles-wrapper {
-}
-
 /* リスト | スタイル | なし */
 .is-style-none-style {
     padding-left: 1em;
@@ -65,4 +62,63 @@
     border: #999 1px solid;
     border-radius: 50%;
     font-size: 83%;
+}
+
+/* リスト | スタイル | サブ番号（ハイフン） */
+.is-style-subnumbered-hyphen-mark-list-style {
+    padding-left: 2.5em;
+}
+
+.is-style-subnumbered-hyphen-mark-list-style li {
+    list-style: none;
+    position: relative;
+    padding-left: 2.5em;
+}
+
+.is-style-subnumbered-hyphen-mark-list-style li::before {
+    content: counters(list-item, "-") " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 2.5em;
+}
+
+.is-style-subnumbered-hyphen-mark-list-style li > :not(ol):not(ul) {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.is-style-subnumbered-hyphen-mark-list-style li > ol,
+.is-style-subnumbered-hyphen-mark-list-style li > ul {
+    margin-left: 0;
+}
+
+.is-style-subnumbered-hyphen-mark-list-style li > * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* リスト | スタイル | 単純白丸 */
+.is-style-white-circle-mark-list-style li {
+    list-style-type: circle;
+    position: relative;
+}
+
+/* リスト | スタイル | 大きい白丸 */
+.is-style-large-white-circle-mark-list-style li {
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.is-style-large-white-circle-mark-list-style li::before {
+    content: "〇";
+    flex: none;
+    line-height: 1.4;
+}
+
+.is-style-large-white-circle-mark-list-style li > * {
+    margin-top: 0;
+    margin-bottom: 0;
 }

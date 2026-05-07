@@ -65,3 +65,36 @@ ol.is-style-numbered-circle-mark-list-style li::before {
     border-radius: 50%;
     font-size: 83%;
 }
+
+/* リスト | スタイル | サブ番号（ハイフン） */
+ol.is-style-subnumbered-hyphen-mark-list-style {
+    padding-left: 2.5em;
+}
+
+ol.is-style-subnumbered-hyphen-mark-list-style li {
+    list-style: none;
+    position: relative;
+}
+
+ol.is-style-subnumbered-hyphen-mark-list-style li::before {
+    content: counters(list-item, "-") " ";
+    display: inline-block;
+    min-width: 2.5em;
+    margin-left: -2.5em;
+}
+
+/* リスト | スタイル | 単純白丸 */
+ul.is-style-white-circle-mark-list-style li {
+    list-style-type: circle;
+    position: relative;
+}
+
+/* リスト | スタイル | 大きい白丸 */
+ul.is-style-large-white-circle-mark-list-style li {
+    list-style-type: none;
+}
+
+ul.is-style-large-white-circle-mark-list-style li::before {
+    content: "〇";
+    margin-right: 8px;
+}
