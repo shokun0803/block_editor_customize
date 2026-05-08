@@ -1,3 +1,15 @@
+.editor-styles-wrapper ul[class*="is-style-"] > .wp-block-list-item > ul,
+.editor-styles-wrapper ol[class*="is-style-"] > .wp-block-list-item > ul {
+    margin-left: 0;
+    padding-left: 1.45em;
+}
+
+.editor-styles-wrapper ul[class*="is-style-"] > .wp-block-list-item > ol,
+.editor-styles-wrapper ol[class*="is-style-"] > .wp-block-list-item > ol {
+    margin-left: 0;
+    padding-left: 1.75em;
+}
+
 /* リスト | スタイル | なし */
 .is-style-none-style {
     padding-left: 1em;
@@ -41,6 +53,14 @@
 }
 
 /* リスト | スタイル | 白丸付き数字 */
+.is-style-numbered-circle-mark-list-style {
+    padding-left: 1.35em;
+}
+
+.wp-block-list-item > .is-style-numbered-circle-mark-list-style {
+    padding-left: 1.75em;
+}
+
 .is-style-numbered-circle-mark-list-style li {
     list-style-type: none;
     position: relative;
@@ -52,7 +72,7 @@
     display: flex;
     width: 1.2em;
     height: 1.2em;
-    margin-left: -2em;
+    margin-left: -1.95em;
     top: 0.35em;
     left: 0;
     justify-content: center;
@@ -64,23 +84,29 @@
     font-size: 83%;
 }
 
+.wp-block-list-item > .is-style-numbered-circle-mark-list-style li:before {
+    margin-left: -2.3em;
+}
+
 /* リスト | スタイル | サブ番号（ハイフン） */
 .is-style-subnumbered-hyphen-mark-list-style {
-    padding-left: 2.5em;
+    padding-left: 1.75em;
 }
 
 .is-style-subnumbered-hyphen-mark-list-style li {
     list-style: none;
     position: relative;
-    padding-left: 2.5em;
 }
 
 .is-style-subnumbered-hyphen-mark-list-style li::before {
     content: counters(list-item, "-") " ";
     position: absolute;
     top: 0;
-    left: 0;
-    min-width: 2.5em;
+    left: -1.75em;
+    width: 2em;
+    box-sizing: content-box;
+    text-align: left;
+    white-space: nowrap;
 }
 
 .is-style-subnumbered-hyphen-mark-list-style li > :not(ol):not(ul) {
@@ -105,26 +131,28 @@
 }
 
 /* リスト | スタイル | 大きい白丸 */
-.is-style-large-white-circle-mark-list-style li {
+.is-style-large-white-circle-mark-list-style > li {
     list-style-type: none;
-    position: relative;
-    padding-left: 1.5em;
 }
 
-.is-style-large-white-circle-mark-list-style li::before {
-    content: "〇";
-    position: absolute;
-    top: 0;
-    left: 0;
-    line-height: 1.4;
+.is-style-large-white-circle-mark-list-style > li::marker {
+    content: "〇 ";
+    font-size: 1em;
+    font-weight: 400;
 }
 
-.is-style-large-white-circle-mark-list-style li > * {
-    margin-top: 0;
-    margin-bottom: 0;
+.is-style-large-white-circle-mark-list-style > .wp-block-list-item > .is-style-large-white-circle-mark-list-style {
+    padding-left: 1.3em;
 }
 
-.is-style-large-white-circle-mark-list-style li > ol,
-.is-style-large-white-circle-mark-list-style li > ul {
-    margin-left: 0;
+ul.is-style-large-white-circle-mark-list-style > .wp-block-list-item > ul.is-style-subnumbered-hyphen-mark-list-style {
+    padding-left: 1.95em;
+}
+
+.is-style-large-white-circle-mark-list-style > .wp-block-list-item > .is-style-numbered-circle-mark-list-style {
+    padding-left: 1.15em;
+}
+
+.is-style-large-white-circle-mark-list-style > .wp-block-list-item > .is-style-numbered-circle-mark-list-style > .wp-block-list-item::before {
+    margin-left: -1.95em;
 }
