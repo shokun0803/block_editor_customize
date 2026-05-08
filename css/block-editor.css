@@ -107,18 +107,24 @@
 /* リスト | スタイル | 大きい白丸 */
 .is-style-large-white-circle-mark-list-style li {
     list-style-type: none;
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
+    position: relative;
+    padding-left: 1.5em;
 }
 
 .is-style-large-white-circle-mark-list-style li::before {
     content: "〇";
-    flex: none;
+    position: absolute;
+    top: 0;
+    left: 0;
     line-height: 1.4;
 }
 
 .is-style-large-white-circle-mark-list-style li > * {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.is-style-large-white-circle-mark-list-style li > ol,
+.is-style-large-white-circle-mark-list-style li > ul {
+    margin-left: 0;
 }
