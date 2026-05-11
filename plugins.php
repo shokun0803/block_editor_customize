@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Block editor customize
-Version: 0.0.2
+Version: 0.0.3
 Author: shokun
 License: GPL2
 */
