@@ -130,6 +130,16 @@
     position: relative;
 }
 
+/* リスト | スタイル | 黒丸 */
+.is-style-disc-mark-list-style > li {
+    list-style-type: disc;
+}
+
+/* リスト | スタイル | 黒四角 */
+.is-style-square-mark-list-style > li {
+    list-style-type: square;
+}
+
 /* リスト | スタイル | 大きい白丸 */
 .is-style-large-white-circle-mark-list-style > li {
     list-style-type: none;

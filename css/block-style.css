@@ -119,6 +119,16 @@ ul.is-style-white-circle-mark-list-style > li {
     position: relative;
 }
 
+/* リスト | スタイル | 黒丸 */
+ul.is-style-disc-mark-list-style > li {
+    list-style-type: disc;
+}
+
+/* リスト | スタイル | 黒四角 */
+ul.is-style-square-mark-list-style > li {
+    list-style-type: square;
+}
+
 /* リスト | スタイル | 大きい白丸 */
 ul.is-style-large-white-circle-mark-list-style > li {
     list-style-type: none;

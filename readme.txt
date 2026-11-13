@@ -4,7 +4,7 @@ Tags: block editor, list, list style, definition list
 Requires at least: 6.3
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.0.4
+Stable tag: 0.0.5
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -20,6 +20,8 @@ Adds the following styles to the core List block. They are applied both in the e
 
 * No marker
 * Open circle
+* Filled circle
+* Filled square
 * Large open circle
 * Numbers with reference mark
 * Numbers in parentheses
@@ -47,6 +49,9 @@ These blocks use the same block names and markup as the Simple Definition List B
 Select the List block (not a list item), open the block settings sidebar and choose a style in the Styles tab.
 
 == Changelog ==
+
+= 0.0.5 =
+* Add "Filled circle" and "Filled square" list styles that keep the marker regardless of nesting depth.
 
 = 0.0.4 =
 * Add definition list blocks.

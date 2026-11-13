@@ -10,6 +10,8 @@ This plugin adds custom styles to the WordPress core List block and loads matchi
 
 - no style
 - simple open circle
+- filled circle
+- filled square
 - large open circle
 - number style with asterisk
 - number style with brackets

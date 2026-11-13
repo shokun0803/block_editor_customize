@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Block editor customize
  * Description:       Adds extra styles to the List block and definition list (dl / dt / dd) blocks to the block editor.
- * Version:           0.0.4
+ * Version:           0.0.5
  * Requires at least: 6.3
  * Requires PHP:      7.4
  * Author:            shokun

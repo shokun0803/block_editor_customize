@@ -13,6 +13,16 @@
 	} );
 
 	registerBlockStyle( 'core/list', {
+		name: 'disc-mark-list-style',
+		label: __( 'Filled circle', 'block-editor-customize' ),
+	} );
+
+	registerBlockStyle( 'core/list', {
+		name: 'square-mark-list-style',
+		label: __( 'Filled square', 'block-editor-customize' ),
+	} );
+
+	registerBlockStyle( 'core/list', {
 		name: 'large-white-circle-mark-list-style',
 		label: __( 'Large open circle', 'block-editor-customize' ),
 	} );
