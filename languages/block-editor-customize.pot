@@ -1,0 +1,146 @@
+# Copyright (C) 2026 shokun
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Block editor customize 0.0.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/block_editor_customize\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-13T01:50:17+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: block-editor-customize\n"
+
+#. Plugin Name of the plugin
+#: plugins.php
+msgid "Block editor customize"
+msgstr ""
+
+#. Description of the plugin
+#: plugins.php
+msgid "Adds extra styles to the List block and definition list (dl / dt / dd) blocks to the block editor."
+msgstr ""
+
+#. Author of the plugin
+#: plugins.php
+msgid "shokun"
+msgstr ""
+
+#: js/definition-list-blocks.js:105
+msgid "Enter the term (dt)."
+msgstr ""
+
+#: js/definition-list-blocks.js:106
+msgid "Enter the description (dd)."
+msgstr ""
+
+#: js/style-blocks.js:7
+msgid "No marker"
+msgstr ""
+
+#: js/style-blocks.js:12
+msgid "Open circle"
+msgstr ""
+
+#: js/style-blocks.js:17
+msgid "Large open circle"
+msgstr ""
+
+#: js/style-blocks.js:22
+msgid "Numbers with reference mark"
+msgstr ""
+
+#: js/style-blocks.js:27
+msgid "Numbers in parentheses"
+msgstr ""
+
+#: js/style-blocks.js:32
+msgid "Circled numbers"
+msgstr ""
+
+#: js/style-blocks.js:37
+msgid "Sub-numbers (hyphen)"
+msgstr ""
+
+#: blocks/definition-details-html/block.json
+msgctxt "block title"
+msgid "DD Tag (Use HTML)"
+msgstr ""
+
+#: blocks/definition-details-html/block.json
+msgctxt "block description"
+msgid "Add a dd tag that can contain blocks inside the dl tag."
+msgstr ""
+
+#: blocks/definition-details-html/block.json
+#: blocks/definition-details/block.json
+#: blocks/definition-div/block.json
+#: blocks/definition-list/block.json
+#: blocks/definition-term/block.json
+msgctxt "block keyword"
+msgid "definition list"
+msgstr ""
+
+#: blocks/definition-details-html/block.json
+#: blocks/definition-details/block.json
+msgctxt "block keyword"
+msgid "dd"
+msgstr ""
+
+#: blocks/definition-details/block.json
+msgctxt "block title"
+msgid "DD Tag"
+msgstr ""
+
+#: blocks/definition-details/block.json
+msgctxt "block description"
+msgid "Add a dd tag inside the dl tag."
+msgstr ""
+
+#: blocks/definition-div/block.json
+msgctxt "block title"
+msgid "DIV Tag"
+msgstr ""
+
+#: blocks/definition-div/block.json
+msgctxt "block description"
+msgid "Add a div tag inside the dl tag."
+msgstr ""
+
+#: blocks/definition-div/block.json
+msgctxt "block keyword"
+msgid "div"
+msgstr ""
+
+#: blocks/definition-list/block.json
+msgctxt "block title"
+msgid "DL Tag"
+msgstr ""
+
+#: blocks/definition-list/block.json
+msgctxt "block description"
+msgid "dl tag. You can add dt, dd, or div tags inside."
+msgstr ""
+
+#: blocks/definition-list/block.json
+msgctxt "block keyword"
+msgid "dl"
+msgstr ""
+
+#: blocks/definition-term/block.json
+msgctxt "block title"
+msgid "DT Tag"
+msgstr ""
+
+#: blocks/definition-term/block.json
+msgctxt "block description"
+msgid "Add a dt tag inside the dl tag."
+msgstr ""
+
+#: blocks/definition-term/block.json
+msgctxt "block keyword"
+msgid "dt"
+msgstr ""

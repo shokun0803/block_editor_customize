@@ -1,36 +1,39 @@
-(function () {
-    wp.blocks.registerBlockStyle( 'core/list', {
-        name: 'none-style',
-        label: 'リストスタイルなし',
-    } );
+( function ( wp ) {
+	var __ = wp.i18n.__;
+	var registerBlockStyle = wp.blocks.registerBlockStyle;
 
-    wp.blocks.registerBlockStyle( 'core/list', {
-        name: 'white-circle-mark-list-style',
-        label: '単純白丸',
-    } );
+	registerBlockStyle( 'core/list', {
+		name: 'none-style',
+		label: __( 'No marker', 'block-editor-customize' ),
+	} );
 
-    wp.blocks.registerBlockStyle( 'core/list', {
-        name: 'large-white-circle-mark-list-style',
-        label: '大きい白丸',
-    } );
+	registerBlockStyle( 'core/list', {
+		name: 'white-circle-mark-list-style',
+		label: __( 'Open circle', 'block-editor-customize' ),
+	} );
 
-    wp.blocks.registerBlockStyle( 'core/list', {
-        name: 'asterisk-list-style',
-        label: '米印付数字',
-    } );
+	registerBlockStyle( 'core/list', {
+		name: 'large-white-circle-mark-list-style',
+		label: __( 'Large open circle', 'block-editor-customize' ),
+	} );
 
-    wp.blocks.registerBlockStyle( 'core/list', {
-        name: 'brackets-list-style',
-        label: '括弧付き数字',
-    } );
+	registerBlockStyle( 'core/list', {
+		name: 'asterisk-list-style',
+		label: __( 'Numbers with reference mark', 'block-editor-customize' ),
+	} );
 
-    wp.blocks.registerBlockStyle( 'core/list', {
-        name: 'numbered-circle-mark-list-style',
-        label: '白丸付き数字',
-    } );
+	registerBlockStyle( 'core/list', {
+		name: 'brackets-list-style',
+		label: __( 'Numbers in parentheses', 'block-editor-customize' ),
+	} );
 
-    wp.blocks.registerBlockStyle( 'core/list', {
-        name: 'subnumbered-hyphen-mark-list-style',
-        label: 'サブ番号（ハイフン）',
-    } );
-})();
+	registerBlockStyle( 'core/list', {
+		name: 'numbered-circle-mark-list-style',
+		label: __( 'Circled numbers', 'block-editor-customize' ),
+	} );
+
+	registerBlockStyle( 'core/list', {
+		name: 'subnumbered-hyphen-mark-list-style',
+		label: __( 'Sub-numbers (hyphen)', 'block-editor-customize' ),
+	} );
+} )( window.wp );

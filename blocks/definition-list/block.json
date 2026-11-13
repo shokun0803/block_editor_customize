@@ -2,14 +2,13 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "simple-definition-list-blocks/list",
-  "title": "DL タグ",
+  "title": "DL Tag",
   "icon": "page",
-  "description": "dl タグ。中に dt タグ、dd タグ、div タグを追加できます。",
+  "description": "dl tag. You can add dt, dd, or div tags inside.",
   "category": "text",
   "keywords": [
     "definition list",
-    "dl",
-    "定義リスト"
+    "dl"
   ],
   "supports": {
     "spacing": {
@@ -18,5 +17,6 @@
     }
   },
   "editorScript": "block-editor-customize-definition-list",
-  "editorStyle": "block-editor-customize-definition-list-editor"
+  "editorStyle": "block-editor-customize-definition-list-editor",
+  "textdomain": "block-editor-customize"
 }

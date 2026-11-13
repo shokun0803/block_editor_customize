@@ -7,6 +7,7 @@
  */
 ( function ( wp ) {
 	var el = wp.element.createElement;
+	var __ = wp.i18n.__;
 	var registerBlockType = wp.blocks.registerBlockType;
 	var blockEditor = wp.blockEditor;
 	var RichText = blockEditor.RichText;
@@ -101,8 +102,8 @@
 		list: containerBlock( 'dl', icons.list, items.concat( [ NS + 'div' ] ) ),
 		div: containerBlock( 'div', icons.div, items ),
 		'details-html': containerBlock( 'dd', icons.details ),
-		term: textBlock( 'dt', icons.term, 'dt タグの内容を入力' ),
-		details: textBlock( 'dd', icons.details, 'dd タグの内容を入力' ),
+		term: textBlock( 'dt', icons.term, __( 'Enter the term (dt).', 'block-editor-customize' ) ),
+		details: textBlock( 'dd', icons.details, __( 'Enter the description (dd).', 'block-editor-customize' ) ),
 	};
 
 	Object.keys( blocks ).forEach( function ( key ) {

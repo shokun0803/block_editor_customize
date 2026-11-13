@@ -2,9 +2,9 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "simple-definition-list-blocks/details",
-  "title": "DD タグ",
+  "title": "DD Tag",
   "icon": "text",
-  "description": "dl タグの中に dd タグを追加します。",
+  "description": "Add a dd tag inside the dl tag.",
   "category": "text",
   "parent": [
     "simple-definition-list-blocks/list",
@@ -19,8 +19,7 @@
   },
   "keywords": [
     "definition list",
-    "dd",
-    "定義リスト"
+    "dd"
   ],
   "editorScript": "block-editor-customize-definition-list",
   "supports": {
@@ -32,5 +31,6 @@
       "fontSize": true,
       "lineHeight": true
     }
-  }
+  },
+  "textdomain": "block-editor-customize"
 }

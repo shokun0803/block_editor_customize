@@ -1,0 +1,4 @@
+# 配布用アーカイブ（git archive）から除外するファイル
+.gitattributes export-ignore
+.gitignore export-ignore
+README.md export-ignore

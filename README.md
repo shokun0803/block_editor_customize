@@ -1,4 +1,4 @@
-# Block editor customize plugin
+# Block editor customize
 
 A plugin to customize the WordPress block editor.
 
@@ -39,3 +39,5 @@ While Simple Definition List Blocks is active, its own blocks are used and these
 - `blocks/definition-*/block.json`: metadata for the definition list blocks
 - `js/definition-list-blocks.js`: editor implementation of the definition list blocks
 - `css/definition-list-editor.css`: editor-only styles for the definition list blocks
+- `languages/`: translation template and Japanese translation
+- `readme.txt`: readme in the WordPress.org plugin directory format

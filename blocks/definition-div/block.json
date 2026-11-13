@@ -2,17 +2,16 @@
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
   "name": "simple-definition-list-blocks/div",
-  "title": "DIV タグ",
+  "title": "DIV Tag",
   "icon": "portfolio",
-  "description": "dl タグの中に div タグを追加します。",
+  "description": "Add a div tag inside the dl tag.",
   "category": "text",
   "parent": [
     "simple-definition-list-blocks/list"
   ],
   "keywords": [
     "definition list",
-    "div",
-    "定義リスト"
+    "div"
   ],
   "editorScript": "block-editor-customize-definition-list",
   "editorStyle": "block-editor-customize-definition-list-editor",
@@ -21,5 +20,6 @@
       "padding": true,
       "margin": true
     }
-  }
+  },
+  "textdomain": "block-editor-customize"
 }
