@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "simple-definition-list-blocks/div",
+  "title": "DIV タグ",
+  "icon": "portfolio",
+  "description": "dl タグの中に div タグを追加します。",
+  "category": "text",
+  "parent": [
+    "simple-definition-list-blocks/list"
+  ],
+  "keywords": [
+    "definition list",
+    "div",
+    "定義リスト"
+  ],
+  "editorScript": "block-editor-customize-definition-list",
+  "editorStyle": "block-editor-customize-definition-list-editor",
+  "supports": {
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  }
+}

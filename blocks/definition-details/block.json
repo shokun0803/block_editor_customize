@@ -1,0 +1,36 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "simple-definition-list-blocks/details",
+  "title": "DD タグ",
+  "icon": "text",
+  "description": "dl タグの中に dd タグを追加します。",
+  "category": "text",
+  "parent": [
+    "simple-definition-list-blocks/list",
+    "simple-definition-list-blocks/div"
+  ],
+  "attributes": {
+    "content": {
+      "type": "string",
+      "source": "html",
+      "selector": "dd.wp-block-simple-definition-list-blocks-details"
+    }
+  },
+  "keywords": [
+    "definition list",
+    "dd",
+    "定義リスト"
+  ],
+  "editorScript": "block-editor-customize-definition-list",
+  "supports": {
+    "spacing": {
+      "padding": true,
+      "margin": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    }
+  }
+}

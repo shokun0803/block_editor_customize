@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "simple-definition-list-blocks/list",
+  "title": "DL タグ",
+  "icon": "page",
+  "description": "dl タグ。中に dt タグ、dd タグ、div タグを追加できます。",
+  "category": "text",
+  "keywords": [
+    "definition list",
+    "dl",
+    "定義リスト"
+  ],
+  "supports": {
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "block-editor-customize-definition-list",
+  "editorStyle": "block-editor-customize-definition-list-editor"
+}

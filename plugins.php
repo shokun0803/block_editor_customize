@@ -39,3 +39,35 @@ function block_list_style_css() {
         wp_enqueue_style( 'block-style-css', $plugin_url . 'css/block-style.css', array(), $filetime );
 }
 add_action( 'wp_enqueue_scripts', 'block_list_style_css' );
+
+// 定義リスト（dl / dt / dd / div）ブロックを登録
+// Simple Definition List Blocks と同じブロック名で登録し、既存のコンテンツを引き継ぐ。
+// 同プラグインが有効な間は、そちらの登録を優先して何もしない。
+function block_editor_customize_register_definition_list_blocks() {
+	$registry = WP_Block_Type_Registry::get_instance();
+	if ( $registry->is_registered( 'simple-definition-list-blocks/list' ) ) {
+		return;
+	}
+
+	$plugin_path = plugin_dir_path( __FILE__ );
+	$plugin_url = plugin_dir_url( __FILE__ );
+
+	wp_register_script(
+		'block-editor-customize-definition-list',
+		$plugin_url . 'js/definition-list-blocks.js',
+		array( 'wp-blocks', 'wp-block-editor', 'wp-element' ),
+		filemtime( $plugin_path . 'js/definition-list-blocks.js' )
+	);
+	wp_register_style(
+		'block-editor-customize-definition-list-editor',
+		$plugin_url . 'css/definition-list-editor.css',
+		array(),
+		filemtime( $plugin_path . 'css/definition-list-editor.css' )
+	);
+
+	$blocks = array( 'definition-list', 'definition-div', 'definition-term', 'definition-details', 'definition-details-html' );
+	foreach ( $blocks as $block ) {
+		register_block_type( $plugin_path . 'blocks/' . $block );
+	}
+}
+add_action( 'init', 'block_editor_customize_register_definition_list_blocks', 20 );

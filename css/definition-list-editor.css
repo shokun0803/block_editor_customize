@@ -1,0 +1,27 @@
+/* 定義リスト | エディター | 選択中だけブロック追加ボタンを表示 */
+.wp-block-simple-definition-list-blocks-list > .block-list-appender,
+.wp-block-simple-definition-list-blocks-div > .block-list-appender {
+    display: none;
+}
+
+.wp-block-simple-definition-list-blocks-list.is-selected,
+.wp-block-simple-definition-list-blocks-list.has-child-selected {
+    padding-bottom: 16px;
+}
+
+.wp-block-simple-definition-list-blocks-list.is-selected > .block-list-appender,
+.wp-block-simple-definition-list-blocks-list.has-child-selected > .block-list-appender {
+    display: flex;
+}
+
+.wp-block-simple-definition-list-blocks-list.is-selected > .block-list-appender .block-editor-button-block-appender.components-button.components-button,
+.wp-block-simple-definition-list-blocks-list.has-child-selected > .block-list-appender .block-editor-button-block-appender.components-button.components-button {
+    padding: 0 !important;
+    color: #fff;
+    background-color: #1e1e1e;
+}
+
+.wp-block-simple-definition-list-blocks-div.is-selected > .block-list-appender,
+.wp-block-simple-definition-list-blocks-div.has-child-selected > .block-list-appender {
+    display: block;
+}

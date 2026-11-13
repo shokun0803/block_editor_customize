@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "simple-definition-list-blocks/details-html",
+  "title": "DD タグ（HTML 使用）",
+  "icon": "text",
+  "description": "dl タグの中に、ブロックを入れられる dd タグを追加します。",
+  "category": "text",
+  "parent": [
+    "simple-definition-list-blocks/list",
+    "simple-definition-list-blocks/div"
+  ],
+  "keywords": [
+    "definition list",
+    "dd",
+    "定義リスト"
+  ],
+  "editorScript": "block-editor-customize-definition-list",
+  "supports": {
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  }
+}
